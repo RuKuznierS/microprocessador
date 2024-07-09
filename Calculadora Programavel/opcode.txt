@@ -1,0 +1,67 @@
+ddd  identifica o registrador destino
+sss  identifica o registrador fonte
+a identifica se a operacao será executada para o acumulador ou registrador
+cccc identifica a constante em complemento de 2
+xxxx é irrelevante
+
+
+MSB     b15                b0 LSB
+         |                  |
+ADD:     0100 a sss xxxx xxxx 
+SUB:     0110 a sss xxxx xxxx
+MOV:     0011 a sss xxxx xxxx
+JUMP:    1010 x xxx cccccccc
+ADDI:    1100 a xxx x ccccccc
+LD:      0010 a sss x ccccccc
+
+---------
+
+ADD A, REG
+opcode = 0100 (inst[15:12])
+A = (inst[11]) -- destino
+REG = (inst[10 a 8])
+
+---------
+
+SUB A, REG
+opcode = 0110 (inst[15:12])
+A = (inst[11]) -- destino
+REG = (inst[10 a 8])
+
+---------
+
+MOV A, REG --> caso A = 1
+MOV REG, A --> caso A = 0
+opcode = 0011 (inst[15:12])
+A = (inst[11])
+REG = (inst[10 a 8])
+
+
+---------
+
+JUMP endereco
+opcode = 1010 (inst[15:12])
+endereco = (inst[7:0])
+
+---------
+
+ADDI A, cte
+opcode = 1100 (inst[15:12])
+A = (inst[11])
+imm = (inst[6:0])
+
+---------
+
+LD A, cte --> caso A = 1
+LD REG, cte --> caso A = 0
+opcode = 0010 (inst[15:12])
+A = (inst[11]) --define se será (LD A, cte) ou (LD REG, cte)
+REG = (inst[10 a 8])
+imm = (inst[6:0])
+
+-----------
+
+NOP
+opcode=0000 (inst[15:12])
+restante=000000000000 (inst[11:0])
+-----------

@@ -1,0 +1,34 @@
+v 4
+file . "calculadora_programavel_top_level_tb.vhd" "0c88e6dcf63a1f954edf269b1cfde9b555685533" "20240709000542.789":
+  entity calculadora_programavel_top_level_tb at 1( 0) + 0 on 75;
+  architecture a_calculadora_programavel_top_level_tb of calculadora_programavel_top_level_tb at 8( 130) + 0 on 76;
+file . "rom.vhd" "2ea9efaaa79b16a9865587bb59a0341ba461fdc5" "20240709000542.662":
+  entity rom at 1( 0) + 0 on 71;
+  architecture a_rom of rom at 15( 301) + 0 on 72;
+file . "pc.vhd" "771b45f2e06f66a28459277ec8506f225a52fdc8" "20240709000542.559":
+  entity pc at 1( 0) + 0 on 67;
+  architecture a_pc of pc at 15( 306) + 0 on 68;
+file . "control_unit.vhd" "ec78b44502888a54d2bb135e063f51b55616645b" "20240709000542.451":
+  entity control_unit at 1( 0) + 0 on 63;
+  architecture a_control_unit of control_unit at 25( 772) + 0 on 64;
+file . "banco_registradores.vhd" "0d83cb229c7f9217a9f25864f5f3adfa7dec7f2f" "20240709000542.345":
+  entity banco_registradores at 1( 0) + 0 on 59;
+  architecture a_banco_registradores of banco_registradores at 18( 485) + 0 on 60;
+file . "ula.vhd" "46393b7b74fdd3e2d0b6795686822822e2d731f5" "20240709000542.234":
+  entity ula at 1( 0) + 0 on 55;
+  architecture a_ula of ula at 16( 377) + 0 on 56;
+file . "reg16bits.vhd" "9706fadebfde3eb4124e4b6728efa4079b847b7b" "20240709000542.293":
+  entity reg16bits at 1( 0) + 0 on 57;
+  architecture a_reg16bits of reg16bits at 15( 306) + 0 on 58;
+file . "acumulador_ula.vhd" "c320ea3840be50d6cf6d2d1098bd24d7ce61976c" "20240709000542.400":
+  entity acumulador_ula at 1( 0) + 0 on 61;
+  architecture a_acumulador_ula of acumulador_ula at 15( 311) + 0 on 62;
+file . "maq_estados.vhd" "80716ae6f4219c0a7ade3c9a9d1313f8bcd94827" "20240709000542.505":
+  entity maq_estados at 1( 0) + 0 on 65;
+  architecture a_maq_estados of maq_estados at 16( 383) + 0 on 66;
+file . "registrador_instrucao.vhd" "984036a70d395fa6d2dc9b2770effa4a4e56939d" "20240709000542.611":
+  entity registrador_instrucao at 1( 0) + 0 on 69;
+  architecture a_registrador_instrucao of registrador_instrucao at 14( 290) + 0 on 70;
+file . "calculadora_programavel_top_level.vhd" "e39f44fe17635a087a245e2cbc5157b02f273fcb" "20240709000542.714":
+  entity calculadora_programavel_top_level at 1( 0) + 0 on 73;
+  architecture a_calculadora_programavel_top_level of calculadora_programavel_top_level at 18( 598) + 0 on 74;

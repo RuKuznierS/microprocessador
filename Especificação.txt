@@ -1,0 +1,13 @@
+Instruções OBRIGATÓRIAS a serem usadas na sua validação:
+{'ADD ctes': 'Há ADDI que pode somar com constante',
+ 'ADD ops': 'ADD com dois operandos apenas',
+ 'Acumulador ou não': 'ULA com acumulador',
+ 'Carga de constantes': 'Carrega diretamente com LD sem somar',
+ 'Comparações': 'não há instrução CMP',
+ 'Flags obrigatórias': ['Carry'],
+ 'SUB ctes': 'SUB apenas entre registradores',
+ 'SUB ops': 'SUB com dois operandos apenas',
+ 'Saltos': 'Incondicional é absoluto e condicional é relativo',
+ 'Subtração': 'SUB sem borrow',
+ 'Validação -- complicações': 'Exceção endereço inválido ROM',
+ 'Validação -- final do loop': 'Detecção do MSB setado usando AND'}
